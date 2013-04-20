@@ -1,7 +1,15 @@
-﻿
+﻿/*
+TODO:
+- map the letter frequency to morse code and get it to choose, function of random dice type thing
+- get rhythmic stuff working on the synth level
+- figure out what to do melodically; maybe use the textstatistics to determine melodic properties
+
+
+/**glob**/
+var curText = "";
+var curStats;
+
 $(document).ready(function () {
-	var curText = "";
-	var curStats;
 	//curText = "asdf";
 	main();
 });
