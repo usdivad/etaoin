@@ -40,11 +40,13 @@ charCodes["9"]="_ _ _ _ .";
 charCodes["0"]="_ _ _ _ _";
 var temp=''
 
-function encode() {
-document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
-document.morsecode.codebox.value="";
+function encode(str) {
+//document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
+str = str.toLowerCase();
+//document.morsecode.codebox.value="";
 temp=''
-var chars=document.morsecode.chars.value.split("");
+//var chars=document.morsecode.chars.value.split("");
+var chars = str.split("");
 
 for (a=0; a<chars.length; a++) {
 if (chars[a]!=" ") {
