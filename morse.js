@@ -40,24 +40,38 @@ charCodes["9"]="_ _ _ _ .";
 charCodes["0"]="_ _ _ _ _";
 var temp=''
 
-function encode(str) {
-//document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
-str = str.toLowerCase();
-//document.morsecode.codebox.value="";
-temp=''
-//var chars=document.morsecode.chars.value.split("");
-var chars = str.split("");
+function encode(in_chars) {
+	
+	in_chars = in_chars.toLowerCase();
+	codebox = "";
+	temp='';
+	var chars = in_chars.split("");
+	for (a=0; a<chars.length; a++) {
+		if (chars[a]!=" ") {
+			if (charCodes[chars[a]]) {
+				codebox+=charCodes[chars[a]]+" ";
+			}
+		}
+	}
+	
+	return codebox;
+	
+	/*	document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
+	document.morsecode.codebox.value="";
+	temp = '';
+	var chars=document.morsecode.chars.value.split("");
 
-for (a=0; a<chars.length; a++) {
-if (chars[a]!=" ") {
-if (window.charCodes[chars[a]]) {
-document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
-temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
-}
-else
-temp+=chars[a]+"=(None)\n";
-}
-else temp+="\n";
-}
-document.morsecode.codebox.value+="\n\n\nEXPLANATION:\n\n"+temp
+	for (a=0; a<chars.length; a++) {
+		if (chars[a]!=" ") {
+			if (window.charCodes[chars[a]]) {
+				document.morsecode.codebox.value+=charCodes[chars[a]]+"    ";
+				temp+=chars[a]+"="+charCodes[chars[a]]+"\n";
+			}
+			else
+				temp+=chars[a]+"=(None)\n";
+		}
+		else temp+="\n";
+	}
+	document.morsecode.codebox.value+="\n\n\nEXPLANATION:\n\n"+temp
+	*/
 }

@@ -22,15 +22,27 @@ function main() {
 		console.log(curText);
 		console.log(curStats);
 		console.log(analyze(curText));
+		$("#poetry_morse").val(encode(curText));
+		$("#fk").text("FK: "+textstatistics(curText).fleschKincaidReadingEase());
 	});
 	
 	/**audio**/
+	/*
 	var synth = T("saw");
 	$("#play").click(function() {
 		synth.play();
 	});
 	$("#pause").click(function() {
 		synth.pause();
+	});
+	*/
+	var env = T("perc", {a:50, r:1000});
+	var oscenv = T("OscGen", {wave:"pulse", env:env, mul:0.15}).play();
+	$("#play").click(function() {
+		oscenv.noteOn(60, 64);
+	});
+	$("#pause").click(function() {
+		oscenv.allNoteOff();
 	});
 }
 
