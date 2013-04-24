@@ -44,17 +44,20 @@ function encode(in_chars) {
 	
 	in_chars = in_chars.toLowerCase();
 	codebox = "";
+	codelist = [];
 	temp='';
 	var chars = in_chars.split("");
 	for (a=0; a<chars.length; a++) {
 		if (chars[a]!=" ") {
 			if (charCodes[chars[a]]) {
 				codebox+=charCodes[chars[a]]+" ";
+				codelist.push(charCodes[chars[a]]);
 			}
 		}
 	}
 	
-	return codebox;
+	//return codebox;
+	return codelist;
 	
 	/*	document.morsecode.chars.value=document.morsecode.chars.value.toLowerCase();
 	document.morsecode.codebox.value="";
