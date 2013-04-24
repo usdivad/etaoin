@@ -3,7 +3,7 @@ TODO:
 - map the letter frequency to morse code and get it to choose, function of random dice type thing
 - get rhythmic stuff working on the synth level
 - figure out what to do melodically; maybe use the textstatistics to determine melodic properties
-
+- have morse/pitch/etc. range increase as text you type increases. also maybe increased rhythm although that won't work for long texts.. so yeah, range is a good one of expansion. the more text you type the greater range of xyz
 
 /**glob**/
 var curText = "";
