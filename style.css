@@ -5,3 +5,7 @@
 #box, #stats {
 	float:left;
 }
+#banner {
+	/*font-weight:bold;*/
+	font-style:italic;
+}

@@ -1,0 +1,71 @@
+﻿e.g use individual letters to determine stuff like e.g. "all k's determine pitch ambitus", "all t's are perc sounds"
+
+different combinations
+
+
+how fast/slow you're inputting keys
+
+INPUT
+
+CLASSIFICATION
+vowel/consonant, hard/soft sound
+specific patterns
+
+generate interesting behavior from "simple note from player"
+- implementation is where the challenge is!
+
+once you solve problem of classifying and assigning behavior, then input/output is modular, you can 
+
+what is best architecture to do this?
+
+
+
+
+
+
+
+
+timbre - wave type = vowels
+plosive consonants = cons
+deviation melodically from given scale = FK reading lvl
+tempo = words per sentence
+register? range?
+
+every time you finish a sentence == scale change.
+
+
+0 	a
+1 	b
+2 	c
+3 	d
+4 	e
+5 	f
+6 	g
+7 	h
+8 	i
+9	j
+10	k
+11	l
+12	m
+13	n
+14	o
+15	p
+16	q
+17	r
+18	s
+19	t
+20	u
+21	v
+22	w
+23	x
+24	y
+25	z
+
+cons:
+nasal = n,m,r,l,w
+stop = p,b,k,g,d,t,c,q
+fricative = s,z,f,v,x,h,j
+
+vowels:
+o,u,a,e,i,y
+--> = more high
