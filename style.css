@@ -9,3 +9,25 @@
 	/*font-weight:bold;*/
 	font-style:italic;
 }
+
+a {
+	color:#e0e0e0;
+}
+
+#example {
+	margin-left:300px;
+}
+
+whisper {
+	font-style:italic;
+	font-weight:normal;
+	color: #7575A3;
+}
+
+whisper:before {
+	content:" (";
+}
+
+whisper:after {
+	content:") ";
+}

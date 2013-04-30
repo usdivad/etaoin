@@ -20,8 +20,33 @@ what is best architecture to do this?
 
 
 
+#MACRO
+- respective zipf distribution of "etaoin" within entire text <==> scale (pentatonic, dorian, whole tone, lydianb7, bebop, easterly) from which pitches are drawn
 
+#BASS
+- morse code of entire text (iterating through) <==> duration of each individual note == rhythm of overall bass pattern
+- wavetype = pulse
 
+#LINE
+- weighted random selection of characters <==> rhythm (via morse code) and timbre (via consonants and vowels)
+	- consonants (loosely grouped):
+		nasal = n,m,r,l,w
+		stop = p,b,k,g,d,t,c,q
+		fricative = s,z,f,v,x,h,j
+	... affect ADSR
+	- vowels in loose formant shape order:
+		o,u,a,e,i
+	... affect wavetype (sin, tri, fami)
+
+#PERC
+- character typed in real-time <==> freq noise being probabilistically triggered on the same metronomic timer as the rest of the voices
+- use of "trigger characters" (etaoin and vowels -> o,u,a,n,e,i,t) <==> alteration of freq used to generate noise
+
+#MASK (for bass)
+- punctuation typed in real-time <==> pad-like shine, sustained note based on bass
+	- . = same freq as bass
+	- ! = an octave above bass
+	- ? = any freq in between (including microtones)
 
 
 
@@ -32,6 +57,12 @@ tempo = words per sentence
 register? range?
 
 every time you finish a sentence == scale change.
+
+etaoin determine scale?
+
+every time you type, that can create the percussion counterpoint
+
+range (stepMax) is determined by 
 
 
 0 	a
@@ -69,3 +100,36 @@ fricative = s,z,f,v,x,h,j
 vowels:
 o,u,a,e,i,y
 --> = more high
+
+
+
+
+
+etaoin
+
+pentatonic
+dorian
+whole
+lydian
+bebop
+east
+
+
+Zzzzz... Alpha beta = to the point. Scale? Ontological entree. Emergency; it shall not be undone!
+
+
+make a score
+comment code properly before all is done
+
+allow for deleting text
+
+
+ you could separate by e.g. ASCII value, punctuation. but right now you're focusing on the plosives etc. SOUND of it all
+
+TODO:
+errr why isn't the pulse/sin/etc. working?
+implement the percussion bit
+
+
+
+why is there still that glitch of "cannot split undefined"? check the code, it's just logic somethings..

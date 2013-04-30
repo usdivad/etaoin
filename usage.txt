@@ -1,0 +1,30 @@
+﻿#etaoin Usage Notes
+#David Su 4/30/2013
+
+#MACRO
+- respective zipf distribution of "etaoin" within entire text <==> scale (pentatonic, dorian, whole tone, lydianb7, bebop, easterly) from which pitches are drawn
+
+#BASS
+- morse code of entire text (iterating through) <==> duration of each individual note == rhythm of overall bass pattern
+- wavetype = pulse
+
+#LINE
+- weighted random selection of characters <==> rhythm (via morse code) and timbre (via consonants and vowels)
+	- consonants (loosely grouped):
+		nasal = n,m,r,l,w
+		stop = p,b,k,g,d,t,c,q
+		fricative = s,z,f,v,x,h,j
+	... affect ADSR
+	- vowels in loose formant shape order:
+		o,u,a,e,i
+	... affect wavetype (sin, tri, fami)
+
+#PERC
+- character typed in real-time <==> freq noise being probabilistically triggered on the same metronomic timer as the rest of the voices
+- use of "trigger characters" (etaoin and vowels -> o,u,a,n,e,i,t) <==> alteration of freq used to generate noise
+
+#MASK (for bass)
+- punctuation typed in real-time <==> pad-like shine, sustained note based on bass
+	- . = same freq as bass
+	- ! = an octave above bass
+	- ? = any freq in between (including microtones)
