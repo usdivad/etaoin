@@ -1,6 +1,10 @@
 ﻿head, body {
 	background-color:#1a1a1a;
 	color:#e0e0e0;
+	font-family: 'Arial', sans-serif;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
 }
 #box, #stats {
 	float:left;
